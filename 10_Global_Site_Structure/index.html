@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HTML Basics</title>
+  <style>
+    html {
+      padding: 0;
+    }
+    * {
+      border: 1px dashed #000;
+      padding: 10px;
+    }
+    body {
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+      display: grid;
+      grid-template-rows: 200px 1fr 200px;
+      grid-template-columns: 200px 1fr 200px;
+      font-size: 30px;
+      font-weight: 900;
+      color: #fff;
+      text-shadow: 1px 1px 2px #000;
+    }
+    header,
+    footer {
+      background-color: red;
+      grid-column: 1 / 4;
+    }
+    main {
+      grid-column: 1 / 3;
+    }
+    section,
+    article,
+    nav {
+      margin: 20px;
+    }
+    header { background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%); }
+    footer { background-image: linear-gradient(to right, #ff8177 0%, #cf556c 100%); }
+    main { background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); }
+    section { background-image: linear-gradient(120deg, #a6c0fe 0%, #f68084 100%); }
+    nav { background-image: linear-gradient(120deg, #d4fc79 0%, #96e6a1 100%); }
+    article { background-image: linear-gradient(to right, #43e97b 0%, #38f9d7 100%); }
+    aside { background-image: linear-gradient(to right, #d4fc79 0%, #f68084 100%); }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+  HEADER
+    <!-- Main navigation -->
+    <nav>NAVIGATION</nav>
+
+  </header>
+
+  <!-- Main part of site -->
+  <main>
+  MAIN
+    <!-- Independent block -->
+    <section>
+    SECTION
+      <!-- Peace of news, article -->
+      <article>ARTICLE 1</article>
+      <article>ARTICLE 2</article>
+      <article>ARTICLE 3</article>
+
+    </section>
+
+    <section>
+      SECTION
+      <article>ARTICLE 4</article>
+    </section>
+
+  </main>
+
+  <!-- Aditional information -->
+  <aside>ASIDE</aside>
+
+  <!-- Footer -->
+  <footer>FOOTER</footer>
+
+</body>
+</html>
